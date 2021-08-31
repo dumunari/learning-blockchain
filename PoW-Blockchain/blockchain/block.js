@@ -24,6 +24,16 @@ class Block {
     generateHash(){
         return sha256(this.index + this.previousHash + JSON.stringify(this.data) + this.timestamp + this.nonce).toString()
     }
+
+    toString() {
+        return `Block - 
+        Index : ${this.index}
+        Previous Hash : ${this.previousHash}
+        Hash      : ${this.hash}
+        Data      : ${this.data}
+        Timestamp : ${this.timestamp}
+        Difficulty : ${this.difficulty}`;
+    }
 }
 
 module.exports = Block

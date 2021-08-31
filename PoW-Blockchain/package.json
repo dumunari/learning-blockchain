@@ -1,15 +1,21 @@
 {
-  "name": "learning-blockchain",
+  "name": "pow-blockchain",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon ./app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
   "dependencies": {
-    "crypto-js": "^4.1.1"
+    "body-parser": "^1.19.0",
+    "crypto-js": "^4.1.1",
+    "express": "^4.17.1"
   }
 }

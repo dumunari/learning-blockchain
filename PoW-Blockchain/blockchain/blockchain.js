@@ -20,6 +20,8 @@ class Blockchain {
 
         this.index++
         this.blocks.push(block)
+
+        return block
     }
 
     isValid() {
